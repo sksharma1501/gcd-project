@@ -53,7 +53,7 @@ train_test_df.subj <- split(train_test_df.reduce, train_test_df$subject)
 
 
 # Split based on activity
-train_test_df.subj.act <- lapply(train_test_df.subj, split, train_test_df$activity) #(train_test_df.subj, train_test_df.subj[[i]]$subject)
+train_test_df.subj.act <- lapply(train_test_df.subj, function(x) {split(x, x$activity)}) 
 #str(train_test_df.subj.act)
 
 # Apply helper function to find columns means for all sub-lists
