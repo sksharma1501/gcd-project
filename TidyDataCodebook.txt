@@ -37,16 +37,16 @@ These signals were used to estimate variables of the feature vector for each pat
 
 Tidy Data Codebook for output.csv:
 ===================================
-a) Row names: 
-tBodyAcc-mean()-X, tBodyAcc-mean()-Y, tBodyAcc-mean()-Z, tBodyAcc-std()-X, tBodyAcc-std()-Y, ....
+a) Column names: 
+tBodyAcc-mean-X, tBodyAcc-mean-Y, tBodyAcc-mean-Z, tBodyAcc-std-X, tBodyAcc-std-Y, ....
 
-Row names correspond to the mean and standard deviation variable names from the input data set. 
-e.g. tBodyAcc-mean()-X means time domain body acceleration mean in X axis.
+Column names correspond to the mean and standard deviation variable names from the input data set. 
+e.g. tBodyAcc-mean-X means time domain body acceleration mean in X axis.
 
-b) Column names: 
+b) Row names: 
 X1.LAYING, X1.SITTING, X1.STANDING, X1.WALKING, X1.WALKING_DOWNSTAIRS, X1.WALKING_UPSTAIRS, ....
 
-Column names indicate the subject id, and the activity pair. e.g. X1.LAYING means only measurements 
+Row names indicate the subject and the activity pair. e.g. X1.LAYING means only measurements 
 performed by subject 1 while doing the LAYING activity.
 
 c) The tabular values indicate the average of particular variable for that activity performed by that 
