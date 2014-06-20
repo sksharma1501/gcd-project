@@ -13,5 +13,6 @@ v) Now reduces the above joint dataframe, by retaining only the mean and standar
 vi) Splits the reduced dataframe based on the "subject". <br>
 vii) Splits the above frame further based on the "activity". <br>
 viii) Applies helper function to find columns means for all sub-lists (multiple lapply). Note that the helper function removes the factor columns viz. "subject" and "activity" before applying colMeans. <br>
-ix) Writes the tidy data into csv file, which is a text file and easily readable in spreadsheet software. <br> <br>
+ix) Writes the data into an intermediate csv file. <br> 
+x) Reads back the csv file and transforms columns to rows in the new dataframe. Writes the new tidy data into another .csv file, which is a text file and easily readable in spreadsheet software. <br><br>
 <b> Note: </b> For Coursera uploading purpose, .txt extension has been added to the output .csv file. Though it can be opened in any text editor, it would be easier to read in spreadsheet software like Excel (first remove the .txt extension). <br>
