@@ -10,7 +10,7 @@ ii) Reads Train data files into dataframe. It converts activity codes to descrip
 iii) Reads Test data files into dataframe. It converts activity codes to descriptive names  and labels the coulmn names. <br>
 iv) Merges the above two dataframes with cbind(). <br>
 v) Now reduces the above joint dataframe, by retaining only the mean and standard deviation columns. <br>
-vi) Tidies up the variable names by removing braces, changing "-" to "." and changing to lower-case.
+vi) Tidies up the variable names by removing braces, changing "-" to "." and changing to lower-case. <br>
 vii) Splits the reduced dataframe based on the "subject". <br>
 viii) Splits the above frame further based on the "activity". <br>
 ix) Applies helper function to find columns means for all sub-lists (multiple lapply). Note that the helper function removes the factor columns viz. "subject" and "activity" before applying colMeans. <br>
